@@ -146,13 +146,4 @@ def get_ui():
     return html_content
 
 
-app = FastAPI()
 
-# 🔓 Windows Security Clearance (CORS) lagana taake Hugging Face aapke model se baat kar sake
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Sabko allow karna
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
