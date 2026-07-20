@@ -34,10 +34,9 @@ if not os.path.exists(GRAPH_DIR):
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-model = joblib.load(
-    r'C:\Users\AA.Y TRADEERS\Desktop\MY_ML_PROJECTS\Notebook\saved_model\final_simplest_model.joblib')
-product_mapping = joblib.load(
-    r'C:\Users\AA.Y TRADEERS\Desktop\MY_ML_PROJECTS\Notebook\saved_model\product_mapping.joblib')
+model = joblib.load('saved_model/final_simplest_model.joblib')
+product_mapping = joblib.load('saved_model/product_mapping.joblib')
+
 
 named_products = {
     "22730": {"name": "Wireless Bluetooth Headphones", "price": 3.75},
