@@ -1,6 +1,4 @@
 
-
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 from fastapi.middleware.cors import CORSMiddleware
